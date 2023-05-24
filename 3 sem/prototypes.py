@@ -1,4 +1,4 @@
-import deepcopy
+import copy
 
 
 class Person(object):
@@ -9,6 +9,6 @@ class Person(object):
         return f'{self.name} {self.age}'
 
 p = Person('Petya', 20)
-p2 = deepcopy(p2)
+p2 = copy.deepcopy(p)
 
 #система не должна зависеть от того, как в ней создаются, компонуются и представляются продукты:
